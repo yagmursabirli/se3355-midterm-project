@@ -1,0 +1,109 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>E-Commerce</title>
+</head>
+<body>
+    <div class="navbar-top"></div>
+      
+    <nav>
+
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.3 5.71L12 12l6.3 6.29-1.42 1.42L12 13.41l-6.29 6.3-1.42-1.42L10.59 12 4.29 5.71 5.71 4.29 12 10.59l6.29-6.3z"/>
+                  </svg>
+                  </a></li>
+                  <li class="sidebar-item has-submenu-mobile">
+                    <a href="#" onclick="toggleSubmenu(event, 'submenu-elektronik')">Elektronik</a>
+                    <ul class="submenu-mobile" id="submenu-elektronik">
+                      <li><a href="#">Bilgisayar ➤</a></li>
+                      <li><a href="#">Telefon ➤</a></li>
+                      <li><a href="#">Tablet ➤</a></li>
+                    </ul>
+                  </li>
+                <li class="sidebar-item has-submenu-mobile">
+                    <a href="#" onclick="toggleSubmenu(event, 'subemenu-moda')">Moda</a>
+                    <ul class="submenu-mobile" id="subemenu-moda">
+                    <li><a href="#">Kadın ➤</a></li>
+                      <li><a href="#">Erkek ➤</a></li>
+                      <li><a href="#">Aksesuar ➤</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ev, Yaşam, Kırtasiye, Ofis</a></li>
+                <li><a href="#">Oto, Bahçe, Yapı Market</a></li>
+                <li><a href="#">Anne, Bebek, Oyuncak</a></li>
+                <li><a href="#">Spor, Outdoor</a></li>
+                <li><a href="#">Kozmetik, Kişisel Bakım</a></li>
+                <li><a href="#">Süpermarket, Pet Shop</a></li>
+                <li><a href="#">Kitap, Müzik, Film, Hobi</a></li>
+                
+            </ul>
+            <ul>
+                <li class="has-submenu hideOnMobile"><a href="#">Elektronik</a><ul class="submenu">
+                    <li><a href="#">Bilgisayar ➤</a></li>
+                    <li><a href="#">Telefon    ➤</a></li>
+                    <li><a href="#">Tablet     ➤</a></li>
+                </ul></li>
+                <li class="has-submenu hideOnMobile"><a href="#">Moda</a>
+                    <ul class="submenu">
+                        <li><a href="#">Kadın   ➤</a></li>
+                        <li><a href="#">Erkek   ➤</a></li>
+                        <li><a href="#">Aksesuar➤</a></li></ul></li>
+                <li class="hideOnMobile"><a href="#">Ev, Yaşam, Kırtasiye, Ofis</a></li>
+                <li class="hideOnMobile"><a href="#">Oto, Bahçe, Yapı Market</a></li>
+                <li class="hideOnMobile"><a href="#">Anne, Bebek, Oyuncak</a></li>
+                <li class="hideOnMobile"><a href="#">Spor, Outdoor</a></li>
+                <li class="hideOnMobile"><a href="#">Kozmetik, Kişisel Bakım</a></li>
+                <li class="hideOnMobile"><a href="#">Süpermarket, Pet Shop</a></li>
+                <li class="hideOnMobile"><a href="#">Kitap, Müzik, Film, Hobi</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                  </svg>
+                  </a></li>
+                  
+            </ul>
+        </nav>
+
+
+        <section id="quick-links" class="quick-links-section">
+            <div class="quick-links-container" id="quickLinksContainer">
+                
+            </div> 
+        </section>
+
+
+        <section class="main-slider-wrapper">
+            <div class="slider-left">
+              <div class="slider-button left" onclick="prevSlide()">
+                <span class="material-icons">chevron_left</span>
+              </div>
+              <div class="single-slider" id="singleSlider">
+                <!-- js ile slider fotoları buraya gelecek -->
+              </div>
+              <div class="slider-button right" onclick="nextSlide()">
+                <span class="material-icons">chevron_right</span>
+              </div>
+            </div>
+            <div class="slider-right">
+              <div class="electronic-deals" id="electronicDeals">
+                <!-- js ile elektronik ürünler buraya geleceek -->
+              </div>
+            </div>
+          </section>
+
+          <section id="recommendations-section">
+            <h2 class="section-title">Sana Özel Öneriler</h2>
+            <div class="recommendations-container" id="recommendationsContainer">
+              <!-- js ile önerilen ürünler buraya gelecek -->
+            </div>
+          </section>
+          
+          
+    
+    <script src = "main.js"></script>
+</body>
+</html>
