@@ -17,7 +17,7 @@ function toggleSubmenu(event, id) {
 
 
 
-fetch('https://run.mocky.io/v3/5d3c43f0-40ce-423a-9e81-f36e48418e07') //8li kart
+fetch('https://run.mocky.io/v3/7711accc-d96f-4832-bee4-73de461b76c6') //8li kart
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('quickLinksContainer');
