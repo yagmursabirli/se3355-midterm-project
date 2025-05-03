@@ -68,7 +68,7 @@ fetch('https://run.mocky.io/v3/7711accc-d96f-4832-bee4-73de461b76c6') //8li kart
     showSlide(currentIndex);
   }
   //electronic
-  fetch('https://run.mocky.io/v3/affe370b-0306-40cb-96bf-736b718319a9')
+  fetch('https://run.mocky.io/v3/b1972a06-957e-4015-ac19-97cf6f3d8eb9')//slider
     .then(res => res.json())
     .then(data => {
       sliderData = data;
@@ -112,7 +112,7 @@ fetch('https://run.mocky.io/v3/7711accc-d96f-4832-bee4-73de461b76c6') //8li kart
       }, 3000);
     }
     // electronic deals
-    fetch('https://run.mocky.io/v3/e8c53eae-9d62-4d82-9fe8-12f2e83b3fe8')
+    fetch('https://run.mocky.io/v3/da03d599-9593-48e0-bcf7-1d79c5ce3e14')
       .then(res => res.json())
       .then(data => {
         electronicDeals = data;
@@ -124,7 +124,7 @@ fetch('https://run.mocky.io/v3/7711accc-d96f-4832-bee4-73de461b76c6') //8li kart
 
 
       // sana özel ürünler kısmı
-      fetch('https://run.mocky.io/v3/894022c7-fcd3-4c3e-9d00-49693c950fbe')
+      fetch('https://run.mocky.io/v3/3c9c478b-b2f3-4068-8ce9-809e5f03f6b7')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('recommendationsContainer');
